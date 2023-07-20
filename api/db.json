@@ -1,0 +1,50 @@
+{
+  "noticias": [
+    {
+      "titulo": "teste aula arnia",
+      "autor": {
+        "id": 2,
+        "apelido": "João Marciano"
+      },
+      "imagem": "https://s2.glbimg.com/LPhpNk8v0NbUXHOn7el6WdOuuDI=/0x0:602x401/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/2/4/BuivkbR7ytke4jXhgkXg/5-bardesco.jpg",
+      "texto": "teste",
+      "id": 1
+    },
+    {
+      "titulo": "teste1",
+      "autor": {
+        "id": 2,
+        "apelido": "João Marciano"
+      },
+      "imagem": "teste1",
+      "texto": "teste1",
+      "id": 2
+    },
+    {
+      "titulo": "teste2",
+      "autor": {
+        "id": 2,
+        "apelido": "João Marciano"
+      },
+      "imagem": "teste2",
+      "texto": "teste2",
+      "id": 3
+    }
+  ],
+  "autores": [
+    {
+      "nome": "João Marciano Freitas",
+      "apelido": "João Marciano",
+      "editora": "Abril",
+      "foto": "https://s2.glbimg.com/LPhpNk8v0NbUXHOn7el6WdOuuDI=/0x0:602x401/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/2/4/BuivkbR7ytke4jXhgkXg/5-bardesco.jpg",
+      "id": 2
+    },
+    {
+      "nome": "Letícia Porto",
+      "apelido": "Letícia",
+      "editora": "globo livros",
+      "foto": "12412",
+      "id": 3
+    }
+  ]
+}
