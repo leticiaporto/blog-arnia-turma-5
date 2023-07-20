@@ -4,7 +4,7 @@ const formulario = document.getElementById('formulario')
     Função responsável por cadastrar o autor na API
 */
 const cadastrarAutor = async (autor) => {
-    await fetch('http://localhost:3000/autores', {
+    await fetch('https://api-blog-arnia-turma-5.onrender.com/autores', {
         method: 'POST',
         headers: {
             'Accept': 'application/json, text/plain, */*',

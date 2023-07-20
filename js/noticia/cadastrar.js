@@ -4,7 +4,7 @@ const formulario = document.getElementById('formulario')
     Função responsável por buscar o autor na API
 */
 const buscarAutor = async (id) => {
-    const resposta = await fetch(`http://localhost:3000/autores/${id}`)
+    const resposta = await fetch(`https://api-blog-arnia-turma-5.onrender.com/autores/${id}`)
     const autor = await resposta.json()
     return autor
 }
@@ -13,7 +13,7 @@ const buscarAutor = async (id) => {
     Função responsável por buscar os autores na API
 */
 const buscarAutores = async () => {
-    const resposta = await fetch('http://localhost:3000/autores')
+    const resposta = await fetch('https://api-blog-arnia-turma-5.onrender.com/autores')
     const autores = await resposta.json()
     return autores
 }
@@ -38,7 +38,7 @@ const carregarSelect = async () => {
     Função responsável por cadastrar a notícia na API
 */
 const cadastrarNoticia = async (noticia) => {
-    await fetch('http://localhost:3000/noticias', {
+    await fetch('https://api-blog-arnia-turma-5.onrender.com/noticias', {
         method: 'POST',
         headers: {
             'Accept': 'application/json, text/plain, */*',

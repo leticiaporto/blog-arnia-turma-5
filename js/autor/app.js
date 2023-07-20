@@ -33,7 +33,7 @@ const renderizarAutores = (autores) => {
     Função responsável por buscar os autores na API
 */
 const getAutores = async () => {
-    const apiResponse = await fetch('http://localhost:3000/autores')
+    const apiResponse = await fetch('https://api-blog-arnia-turma-5.onrender.com/autores')
     const autores = await apiResponse.json()
     renderizarAutores(autores)
 }
@@ -56,7 +56,7 @@ const editarAutor = (id) => {
     Função responsável por excluir a notícia da API
 */
 const excluirAutor = async (id) => {
-  await fetch(`http://localhost:3000/autores/${id}`, {
+  await fetch(`https://api-blog-arnia-turma-5.onrender.com/autores/${id}`, {
       method: 'DELETE'
   })
   getAutores()

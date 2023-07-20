@@ -16,7 +16,7 @@ const getIdUrl = () => {
     Função responsável por buscar o notícia na API
 */
 const buscarNoticia = async (id) => {
-    const response = await fetch(`http://localhost:3000/noticias/${id}`)
+    const response = await fetch(`https://api-blog-arnia-turma-5.onrender.com/noticias/${id}`)
     const noticia = await response.json()
     return noticia
 }
@@ -25,7 +25,7 @@ const buscarNoticia = async (id) => {
     Função responsável por buscar o autor na API
 */
 const buscarAutor = async (id) => {
-    const resposta = await fetch(`http://localhost:3000/autores/${id}`)
+    const resposta = await fetch(`https://api-blog-arnia-turma-5.onrender.com/autores/${id}`)
     const autor = await resposta.json()
     return autor
 }
@@ -34,7 +34,7 @@ const buscarAutor = async (id) => {
     Função responsável por buscar os autores na API
 */
 const buscarAutores = async () => {
-    const resposta = await fetch('http://localhost:3000/autores')
+    const resposta = await fetch('https://api-blog-arnia-turma-5.onrender.com/autores')
     const autores = await resposta.json()
     return autores
 }
@@ -69,7 +69,7 @@ const carregarDadosFormulario = async (noticia) => {
     Função responsável por editar a notícia na API
 */
 const editarNoticia = async (id, noticia) => {
-    await fetch(`http://localhost:3000/noticias/${id}`, {
+    await fetch(`https://api-blog-arnia-turma-5.onrender.com/noticias/${id}`, {
         method: 'PUT',
         headers: {
             'Accept': 'application/json, text/plain, */*',

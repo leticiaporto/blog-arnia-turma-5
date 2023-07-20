@@ -15,7 +15,7 @@ const getIdUrl = () => {
     Função responsável por buscar o autor na API
 */
 const buscarAutor = async (id) => {
-    const resposta = await fetch(`http://localhost:3000/autores/${id}`)
+    const resposta = await fetch(`https://api-blog-arnia-turma-5.onrender.com/autores/${id}`)
     const autor = await resposta.json()
     return autor
 }
@@ -34,7 +34,7 @@ const carregarDadosFormulario = async (autor) => {
     Função responsável por editar o autor na API
 */
 const editarAutor = async (id, autor) => {
-    await fetch(`http://localhost:3000/autores/${id}`, {
+    await fetch(`https://api-blog-arnia-turma-5.onrender.com/autores/${id}`, {
         method: 'PUT',
         headers: {
             'Accept': 'application/json, text/plain, */*',

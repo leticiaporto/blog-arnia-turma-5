@@ -54,7 +54,7 @@ const getNoticias = async (textoPesquisa = null) => {
     texto = `?q=${textoPesquisa}`
   }
 
-  const apiResponse = await fetch(`http://localhost:3000/noticias${texto}`)
+  const apiResponse = await fetch(`https://api-blog-arnia-turma-5.onrender.com/noticias${texto}`)
   const noticias = await apiResponse.json()
   renderizarNoticias(noticias)
 }
@@ -77,7 +77,7 @@ const editarNoticia = (id) => {
     Função responsável por excluir a notícia da API
 */
 const excluirNoticia = async (id) => {
-  await fetch(`http://localhost:3000/noticias/${id}`, {
+  await fetch(`https://api-blog-arnia-turma-5.onrender.com/noticias/${id}`, {
     method: 'DELETE'
   })
   getNoticias()
